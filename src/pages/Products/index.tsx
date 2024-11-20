@@ -13,7 +13,11 @@ const Products = () => {
   }
   console.log("list", productsList);
 
-  return <div>Products</div>;
+  return (
+    <section className="products content">
+      <div className="container">Products</div>
+    </section>
+  );
 };
 
 export default Products;
