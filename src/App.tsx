@@ -1,9 +1,13 @@
 import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import Products from "./pages/Products";
 
 function App() {
   return (
     <main>
-      <h2>Hello</h2>
+      <Routes>
+        <Route path="/" element={<Products />} />
+      </Routes>
     </main>
   );
 }
