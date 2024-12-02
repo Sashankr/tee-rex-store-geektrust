@@ -1,0 +1,12 @@
+.products {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+}

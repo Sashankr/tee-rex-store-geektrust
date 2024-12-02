@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
-import { PRODUCTS_ENDPOINT } from "../constants";
 
-const useFetchProducts = () => {
+interface useFetchProps {
+  endpoint: string;
+}
+
+const useFetch = ({ endpoint }: useFetchProps) => {
   const [productsList, setProductsList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   async function fetchProductsList() {
     try {
-      const response = await fetch(PRODUCTS_ENDPOINT);
+      const response = await fetch(endpoint);
       if (response.status === 200) {
         const productsData = await response.json();
         setProductsList(productsData);
@@ -30,4 +33,4 @@ const useFetchProducts = () => {
   return { productsList, loading, error };
 };
 
-export default useFetchProducts;
+export default useFetch;
