@@ -1,3 +1,4 @@
+import CurrencyIcon from "../CurrencyIcon";
 import "./styles.scss";
 
 interface ProductCardProps {
@@ -19,10 +20,10 @@ const ProductCard = (props: ProductCardProps) => {
   return (
     <section className="product-card">
       <img src={imageURL} alt={name} />
-      <h3>{name}</h3>
+      <h3 className="product-card__name">{name}</h3>
       <article>
         <h4>
-          {currency} {price}
+          <CurrencyIcon currency={currency} /> {price}
         </h4>
       </article>
     </section>

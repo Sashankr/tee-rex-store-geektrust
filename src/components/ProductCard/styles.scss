@@ -6,5 +6,11 @@
 
     img {
         max-width: 100%;
+        // border: 1px solid var(--color-light-200);
     }
+
+    &__name {
+        font-weight: 300;
+    }
+
 }
