@@ -23,9 +23,17 @@ const ProductCard = (props: ProductCardProps) => {
       <h3 className="product-card__name">{name}</h3>
       <article>
         <h4>
-          <CurrencyIcon currency={currency} /> {price}
+          <CurrencyIcon currency={currency} />{" "}
+          <span className="product-card__price">{price}</span>
         </h4>
       </article>
+      <section className="product-card__footer">
+        <button>Add to cart</button>
+        <div>
+          <label htmlFor="quantity"></label>
+          <input type="text" defaultValue={1} />
+        </div>
+      </section>
     </section>
   );
 };

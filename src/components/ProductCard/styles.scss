@@ -10,7 +10,37 @@
     }
 
     &__name {
+        font-weight: 400;
+    }
+
+    &__price {
         font-weight: 300;
+        font-size: 1rem;
+    }
+
+    &__footer {
+        display: flex;
+        gap: 1rem;
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        margin-top: 1rem;
+
+        button {
+            flex: 1;
+            padding: 10px 20px;
+            border: unset;
+            background: var(--color-dark-500);
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        input {
+            width: 40px;
+            height: 100%;
+            padding: 10px;
+            text-align: center;
+        }
     }
 
 }
