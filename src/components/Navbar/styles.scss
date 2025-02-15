@@ -4,18 +4,42 @@
     z-index: 10;
     background: var(--color-light-100);
     top: 0;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         padding: 1rem 0;
+        align-items: flex-end;
 
         h2 {
-            color: var(--color-dark-700);
+            font-weight: 500;
+            font-size: 1.5rem;
         }
 
         i {
-            color: var(--color-dark-700);
+            font-size: 1.5rem;
         }
+    }
+
+    &__cart {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__cart-count {
+        position: absolute;
+        top: -16px;
+        right: -1.25rem;
+        background: #ddd;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: -1;
     }
 }

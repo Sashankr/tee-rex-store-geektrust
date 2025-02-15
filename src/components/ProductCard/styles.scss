@@ -1,8 +1,9 @@
 .product-card {
 
-    box-shadow: 0 0 10px #e2e2e2;
+    box-shadow: -4px 6px 10px #d6d6d6;
     padding: 1rem;
     border-radius: 10px;
+    border: 2px solid #ddd;
 
     img {
         max-width: 100%;
@@ -10,11 +11,12 @@
     }
 
     &__name {
-        font-weight: 400;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
     &__price {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1rem;
     }
 
@@ -28,11 +30,16 @@
             flex: 1;
             padding: 10px 20px;
             border: unset;
-            background: var(--color-dark-500);
-            color: #fff;
+            background: var(--color-light-100);
             border-radius: 10px;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.4s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         input {
@@ -40,6 +47,9 @@
             height: 100%;
             padding: 10px;
             text-align: center;
+            background: var(--color-light-500);
+            border: unset;
+            border-radius: 10px;
         }
     }
 

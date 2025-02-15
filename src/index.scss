@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -7,11 +9,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-dark-800: #595DF1;
-  --color-dark-500: #595DF1;
-  --color-light-500: #edae49ff;
-  --color-light-200: #f9df74ff;
-  --color-light-100: #f9edccff;
+  // --color-dark-800: #284b63;
+  // --color-dark-500: #284b63;
+  // --color-light-500: #843B62;
+  // --color-light-200: #c56498;
+  // --color-light-100: #f9edccff;
 }
 
 * {
