@@ -30,10 +30,6 @@ const ProductCard = (props: ProductCardProps) => {
       </article>
       <section className="product-card__footer">
         <Button>Add to cart</Button>
-        <div>
-          <label htmlFor="quantity"></label>
-          <input type="text" defaultValue={1} />
-        </div>
       </section>
     </section>
   );
