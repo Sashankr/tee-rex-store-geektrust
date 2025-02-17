@@ -1,0 +1,14 @@
+.custom-btn {
+    background: #3b3b3b;
+    border: unset;
+    color: #fff;
+    flex: 1;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: opacity 0.4s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

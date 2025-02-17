@@ -1,5 +1,7 @@
+import "./styles.scss";
+
 const Button = ({ children }) => {
-  return <button>{children}</button>;
+  return <button className="custom-btn">{children}</button>;
 };
 
 export default Button;

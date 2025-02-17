@@ -1,3 +1,4 @@
+import Button from "../Button";
 import CurrencyIcon from "../CurrencyIcon";
 import "./styles.scss";
 
@@ -28,7 +29,7 @@ const ProductCard = (props: ProductCardProps) => {
         </h4>
       </article>
       <section className="product-card__footer">
-        <button>Add to cart</button>
+        <Button>Add to cart</Button>
         <div>
           <label htmlFor="quantity"></label>
           <input type="text" defaultValue={1} />
