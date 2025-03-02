@@ -29,7 +29,7 @@ const ProductCard = (props: ProductCardProps) => {
         </h4>
       </article>
       <section className="product-card__footer">
-        <Button>Add to cart</Button>
+        <Button type="primary-dark">Add to cart</Button>
       </section>
     </section>
   );

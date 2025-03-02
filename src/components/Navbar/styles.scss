@@ -17,6 +17,7 @@
         h2 {
             font-weight: 500;
             font-size: 1.5rem;
+            color: var(--color-primary-dark);
         }
 
         i {
@@ -27,13 +28,15 @@
     &__cart {
         position: relative;
         cursor: pointer;
+        color: var(--color-primary-dark);
     }
 
     &__cart-count {
         position: absolute;
         top: -16px;
         right: -1.25rem;
-        background: #ddd;
+        background: var(--color-primary);
+        color: #fff;
         width: 30px;
         height: 30px;
         display: flex;

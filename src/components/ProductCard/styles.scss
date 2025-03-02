@@ -1,23 +1,37 @@
 .product-card {
 
-    box-shadow: -4px 6px 10px #d6d6d6;
+
+    box-shadow: -5px 6px 7px #e1d4ff;
     padding: 1rem;
     border-radius: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--color-primary);
+    transition: box-shadow 0.2s;
+    transition: border 0.4s ease;
+
+    .currency-icon {
+        color: var(--color-secondary);
+    }
+
+    &:hover {
+        border-color: #b293fa;
+    }
 
     img {
         max-width: 100%;
-        // border: 1px solid var(--color-light-200);
+        height: 250px;
     }
 
     &__name {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1rem;
+        color: var();
     }
 
     &__price {
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1rem;
+
+
     }
 
     &__footer {
